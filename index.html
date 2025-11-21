@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Form — Task 6</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+     <!-- Header with Logo and Navigation Links -->
+    <header class="header">
+        <div class="logo">ElevateDev</div>
+        <nav class="nav">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">About</a>
+            <a href="mailto:shreyagaikwad2k4@gmail.com">Mail us</a>
+        </nav>
+    </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+
+    <form id="contactForm" novalidate aria-describedby="form-help">
+      <p id="form-help" class="sr-only">
+        Fill name, email and message. Errors will appear below each field.
+      </p>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" autocomplete="name" />
+      <div class="error" id="nameError" aria-live="polite"></div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" />
+      <div class="error" id="emailError" aria-live="polite"></div>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6"></textarea>
+      <div class="error" id="messageError" aria-live="polite"></div>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn">Send Message</button>
+        <button type="reset" id="resetBtn">Reset</button>
+      </div>
+
+      <div id="formMessage" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <!-- Footer with Social Links -->
+    <footer class="footer">
+        <p>&copy; 2025 ElevateDev. All rights reserved.</p>
+        <div class="social-links">
+            <!-- Twitter link removed as requested -->
+            <a href="https://www.linkedin.com/in/shreya-gaikwad-2k4" aria-label="LinkedIn">LinkedIn</a>
+            <!-- GitHub link updated with your URL -->
+            <a href="https://github.com/ShreyaGaikwad2k4" aria-label="GitHub">GitHub</a>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
